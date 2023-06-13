@@ -53,7 +53,7 @@ document.querySelector('.check').addEventListener('click', function(){
             displayMessage( guessingNumber > secretNumber ? 'Слишком много!' : 'Слишком мало!')
             score --
             document.querySelector('.score').textContent = score
-            
+            document.querySelector('.number-input').value = ''
             //player lost
         }else{
             displayMessage('Ты проиграл лох!')
